@@ -199,7 +199,8 @@ public class BMI extends javax.swing.JFrame {
         double t = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         
-        double hasil = b / (t * t);
+        double tb = t / 100;
+        double hasil = b / (tb * tb);
         
         String cal = String.format("%.2f",hasil);
         
